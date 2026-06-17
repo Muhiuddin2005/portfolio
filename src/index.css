@@ -635,8 +635,10 @@ header.scrolled {
 }
 
 .profile-image {
-  width: 600px;
-  height: 750px;
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  aspect-ratio: 4/5;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: var(--shadow-card);
@@ -740,8 +742,9 @@ header.scrolled {
 
 .about-img {
   width: 100%;
-  max-width: 500px;
-  height: 600px;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 4/5;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: var(--shadow-card);
@@ -1666,7 +1669,7 @@ header.scrolled {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -1763,12 +1766,12 @@ header.scrolled {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
 }
 
 .projects-grid-3d {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.2rem;
   align-items: start;
 }
