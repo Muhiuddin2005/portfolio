@@ -1097,11 +1097,6 @@ header.scrolled {
     order: -1;
   }
 
-  .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
   .hero-actions {
     flex-direction: column;
     align-items: center;
@@ -1116,12 +1111,38 @@ header.scrolled {
 
   .profile-image,
   .about-img {
-    width: 300px;
-    height: 400px;
+    width: 90%;
+    max-width: 340px;
+    height: auto;
+    aspect-ratio: 4/5;
+    margin: 0 auto;
+    display: block;
   }
 
   .floating-card {
     display: none;
+  }
+
+  .greeting {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .stat {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
   }
 
   .section-title {
@@ -1178,8 +1199,7 @@ header.scrolled {
 
   .profile-image,
   .about-img {
-    width: 250px;
-    height: 350px;
+    max-width: 280px;
   }
 
   .social-icon {

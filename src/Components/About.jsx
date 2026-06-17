@@ -134,7 +134,7 @@ function About({ scrollReveal, buttonAction }) {
         height: rect.height,
       };
       const margin = 14;
-      const width = Math.min(780, sectionRect.width * 0.84);
+      const width = Math.min(780, sectionRect.width * (window.innerWidth < 768 ? 0.94 : 0.84));
       const height = Math.min(410, window.innerHeight * 0.62);
       const centeredLeft = (sectionRect.width - width) / 2;
       const centeredTop = Math.max(

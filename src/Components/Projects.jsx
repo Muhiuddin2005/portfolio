@@ -231,7 +231,7 @@ function Projects({ scrollReveal }) {
       const margin = 12;
       const preferredWidth = Math.min(
         Math.max(rect.width * 1.7, 560),
-        sectionRect.width * 0.82,
+        sectionRect.width * (window.innerWidth < 768 ? 0.94 : 0.82),
       );
       const preferredHeight = Math.min(
         Math.max(rect.height * 1.9, 520),
